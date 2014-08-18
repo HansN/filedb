@@ -7,7 +7,7 @@
 
 read(Tab, Id) ->
     case file:consult(file_name(Tab,Id)) of
-	{ok,Term} -> [Term];
+	{ok,List} -> List;
 	_ -> []
     end.
 
